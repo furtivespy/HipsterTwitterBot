@@ -60,7 +60,9 @@ function newBusiness(){
 	if (part2==part1 || adj2 == adj1) { //start over if words match.
 		newBusiness(); 
 	} else {
-		var msg = part1 & ' & ' & part2 & ': ' & adj1 & ' ' & adj2 & ' ' & prod;
+		var msg = "";
+		console.log(part1);
+		msg = msg & part1 & ' & ' & part2 & ': ' & adj1 & ' ' & adj2 & ' ' & prod;
 		T.post('statuses/update', { status: msg }, function(err, data, response) {
 			console.log(data);
 		});
