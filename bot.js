@@ -43,13 +43,13 @@ var Descriptors = ["artisanal", "artisan", "asymmetrical", "bearded", "trendy", 
 				   "recycled", "upcycled", "eccentric", "authentic", "gourmet", "pasionate", "emo", "liberal", "hand-carved", "wooden", 
 				   "classic", "rare", "original", "genuine", "historic", "aged", "ancient", "timeworn", "dapper", "micro", "leather",
 				   "plaid", "filtered", "tribal", "locally-made", "natural", "traditional", "hand-woven", "vegan", "non-profit", "unique",
-				   "sarcastic" ];
+				   "sarcastic", "forged" ];
 
 var Products = ["cardigans", "glasses", "tattoos", "cocktails", "fedoras", "bicycles", "kale", "leggings", "mustaches", "whiskey", "beer", 
 				"trucker hats", "synthesizers", "bacon", "scooters", "high-top sneakers", "baristas", "urban farming", "grilled cheese sandwiches",
-				"spoons", "pot holders", "trivits", "coasters", "priuses", "colanders", "skateboards", "pickles", "jewelry", "scarves",
+				"spoons", "pot holders", "trivets", "coasters", "priuses", "colanders", "skateboards", "pickles", "jewelry", "scarves",
 				"books", "boots", "typewriters", "coffee", "parchment", "vinegar", "cameras", "teas", "satchels", "soybeans", "yarn", 
-				"boomboxes", "notebooks", "wine"  ];
+				"boomboxes", "notebooks", "wine", "kettles"  ];
 
 function newBusiness(){
 	var part1 = deck.pick(NameWords);
