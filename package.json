@@ -1,0 +1,29 @@
+{
+  "name": "Furtivespy-HipsterBot",
+  "version": "0.0.1",
+  "description": "A twitter bot for hipster businesses",
+  "homepage": "https://github.com/furtivespy/",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "director": "",
+    "cool-ascii-faces": "latest",
+    "deck" : ">=0.0.3",
+    "twit" : "latest"
+  },
+  "engines": {
+    "node": "0.10.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/furtivespy/"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "groupme"
+  ],
+  "license": "MIT"
+}
