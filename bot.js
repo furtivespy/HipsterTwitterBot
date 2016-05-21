@@ -43,17 +43,22 @@ var Descriptors = ["artisanal", "artisan", "asymmetrical", "bearded", "trendy", 
 				   "recycled", "upcycled", "eccentric", "authentic", "gourmet", "pasionate", "emo", "liberal", "hand-carved", "wooden", 
 				   "classic", "rare", "original", "genuine", "historic", "aged", "ancient", "timeworn", "dapper", "micro", "leather",
 				   "plaid", "filtered", "tribal", "locally-made", "natural", "traditional", "hand-woven", "vegan", "non-profit", "unique",
-				   "sarcastic", "forged", "smoked" ];
+				   "sarcastic", "forged", "smoked", "human-powered", "lavender", "creative", "fair-trade", "debonair"   ];
 
 var Products = ["cardigans", "glasses", "tattoos", "cocktails", "fedoras", "bicycles", "kale", "leggings", "mustaches", "whiskey", "beer", 
 				"trucker hats", "synthesizers", "bacon", "scooters", "high-top sneakers", "baristas", "urban farming", "grilled cheese sandwiches",
 				"spoons", "pot holders", "trivets", "coasters", "priuses", "colanders", "skateboards", "pickles", "jewelry", "scarves",
 				"books", "boots", "typewriters", "coffee", "parchment", "vinegar", "cameras", "teas", "satchels", "soybeans", "yarn", 
-				"boomboxes", "notebooks", "wine", "kettles" , "oils", "watches", "belts", "towels" ];
+				"boomboxes", "notebooks", "wine", "kettles" , "oils", "watches", "belts", "towels", "forks", "sporks", "salsa", "undergarments",
+				"gloves"  ];
+
+String.prototype.capitalizeFirstLetter = function() {
+    return this.charAt(0).toUpperCase() + this.slice(1);
+}
 
 function newBusiness(){
-	var part1 = deck.pick(NameWords);
-	var part2 = deck.pick(NameWords);
+	var part1 = deck.pick(NameWords).capitalizeFirstLetter();
+	var part2 = deck.pick(NameWords).capitalizeFirstLetter();
 	var adj1 = deck.pick(Descriptors);
 	var adj2 = deck.pick(Descriptors);
 	var prod = deck.pick(Products);
