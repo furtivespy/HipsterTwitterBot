@@ -61,6 +61,11 @@ function newBusiness(){
 		newBusiness(); 
 	} else {
 		var msg = "";
+		console.log(part1);
+		console.log(part2);
+		console.log(adj1);
+		console.log(adj2);
+		console.log(prod);
 		msg = msg & part1 & ' & ' & part2 & ': ' & adj1 & ' ' & adj2 & ' ' & prod;
 		console.log(msg);
 		T.post('statuses/update', { status: msg }, function(err, data, response) {
