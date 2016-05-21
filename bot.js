@@ -43,13 +43,13 @@ var Descriptors = ["artisanal", "artisan", "asymmetrical", "bearded", "trendy", 
 				   "recycled", "upcycled", "eccentric", "authentic", "gourmet", "pasionate", "emo", "liberal", "hand-carved", "wooden", 
 				   "classic", "rare", "original", "genuine", "historic", "aged", "ancient", "timeworn", "dapper", "micro", "leather",
 				   "plaid", "filtered", "tribal", "locally-made", "natural", "traditional", "hand-woven", "vegan", "non-profit", "unique",
-				   "sarcastic", "forged" ];
+				   "sarcastic", "forged", "smoked" ];
 
 var Products = ["cardigans", "glasses", "tattoos", "cocktails", "fedoras", "bicycles", "kale", "leggings", "mustaches", "whiskey", "beer", 
 				"trucker hats", "synthesizers", "bacon", "scooters", "high-top sneakers", "baristas", "urban farming", "grilled cheese sandwiches",
 				"spoons", "pot holders", "trivets", "coasters", "priuses", "colanders", "skateboards", "pickles", "jewelry", "scarves",
 				"books", "boots", "typewriters", "coffee", "parchment", "vinegar", "cameras", "teas", "satchels", "soybeans", "yarn", 
-				"boomboxes", "notebooks", "wine", "kettles"  ];
+				"boomboxes", "notebooks", "wine", "kettles" , "oils", "watches", "belts", "towels" ];
 
 function newBusiness(){
 	var part1 = deck.pick(NameWords);
@@ -61,11 +61,6 @@ function newBusiness(){
 		newBusiness(); 
 	} else {
 		var msg = "";
-		console.log(part1);
-		console.log(part2);
-		console.log(adj1);
-		console.log(adj2);
-		console.log(prod);
 		msg = part1 + " & " + part2 + ": " + adj1 + " " + adj2 + " " + prod;
 		console.log(msg);
 		T.post('statuses/update', { status: msg }, function(err, data, response) {
